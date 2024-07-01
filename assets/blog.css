@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 2px solid #333;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+header .switch {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+header .switch input {
+    display: none;
+}
+
+header .switch .slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+header .switch .slider:before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.4s;
+}
+
+header .switch input:checked + .slider {
+    background-color: #2196F3;
+}
+
+header .switch input:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+.container {
+    padding: 20px;
+}
+
+.blog-post {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h2 {
+    margin-top: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 2px solid #333;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+body.dark-theme {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+body.dark-theme .blog-post {
+    background-color: #444;
+    border-color: #666;
+}
+
+body.dark-theme header,
+body.dark-theme footer {
+    background-color: #444;
+    border-color: #666;
+}
